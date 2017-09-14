@@ -148,6 +148,10 @@ textarea {
      font-family: Rajdhani;
    }
 
+   .flexbox-container {
+     display: flex;
+   }
+
    .vertically-centered {
      /* VERTICAL CENTER MARKUP */
      position: absolute;
@@ -171,6 +175,30 @@ textarea {
      background-size: cover;
    }
 
+   .icons-row {
+     display: flex;
+     align-items: baseline;
+     justify-content: center;
+     padding-top: 10px;
+   }
+
+   .icon-and-label {
+    color: #FFFFFF;
+    margin: 30px;
+    font-family: Oswald-ExtraLight;
+    font-size: 26.88px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   img.icons-row {
+     height: 36px;
+     width: auto;
+     margin-right: 16px;
+   }
+
    .headline {
      /* An evening of knowle: */
     font-family: Rajdhani-Medium;
@@ -178,61 +206,45 @@ textarea {
     color: #FFFFFF;
     letter-spacing: 0;
     line-height: 62px;
-   }
-
-   .logo  {
-     width: 40%;
-     max-height: 20vh;
+    margin: 80px 0;
    }
 
    .header-logo {
      background-image: url('../img/triangle-technight-scalable.svg');
      background-repeat: no-repeat;
-     min-height: 150px;
-     max-height: 400px;
-     width: 40%;
+     background-position: center;
+     height: 260px;
+     width: auto;
    }
 
-   .next-event {
+   .next-event-container {
+     display: flex;
+     align-items: center;
+     flex-wrap: nowrap;
+     justify-content: center;
+     width: auto;
+     height: auto;
+     min-width: 400px;
      min-height: 40px;
-     border: 4px solid #FFFFFF;
    }
 
-   .next-event-text {
-     font-weight: bold;
-
+   .next-event-border {
+     border: 6px solid #FFFFFF;
+     display: inline-block;
    }
 
-   /* An evening of knowle: */
-   font-family: Rajdhani-Medium;
-   font-size: 36px;
-   color: #FFFFFF;
-   letter-spacing: 0;
-   line-height: 62px;
+   .event-icon  {
+     margin: 16px;
+   }
 
-
-   /* Next Event: March/Ap: */
-   font-family: Rajdhani-Bold;
-   font-size: 28px;
-   color: #FFFFFF;
-   letter-spacing: 0;
-   /* Bounds: */
-   /* Shape: */
-   background: #FFFFFF;
-   /* Rectangle 2: */
-   border: 4px solid #FFFFFF;
-
-
-
-
-
-
-
-
-
-
-
-
+   h2.next-event-text {
+    font-weight: bold;
+    font-family: Rajdhani-Bold;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-right: 16px;
+   }
 
 
 
